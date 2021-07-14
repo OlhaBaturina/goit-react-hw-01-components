@@ -1,0 +1,61 @@
+.avatar {
+  display: block;
+  height: auto;
+  width: 150px;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 1px solid inherit;
+  border-radius: 50%;
+  margin-bottom: 40px;
+}
+
+.profile {
+  display: block;
+  height: 350px;
+  width: 250px;
+  margin: 0 auto;
+  background-color: rgb(240, 240, 240);
+  border: 1px solid inherit;
+  border-radius: 3px;
+  color: rgb(94, 89, 89);
+  padding: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+.profile:hover {
+  box-shadow: 0 0 20px rgba(206, 9, 9, 0.5);
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.name {
+  color: black;
+  text-align: center;
+}
+.tag {
+  text-align: center;
+}
+.location {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.description {
+  margin-bottom: 30px;
+}
+
+.stats {
+  display: flex;
+  justify-content: center;
+}
+
+.quantity {
+  color: black;
+}
+
+.list {
+  font-size: 12px;
+  margin: 0 3px;
+  padding: 4px;
+  border: 2px solid grey;
+  background-color: gainsboro;
+}
