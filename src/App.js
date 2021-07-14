@@ -1,5 +1,7 @@
-import DataInfo from "./dataSource/user.json";
-import Profile from "./Components/Profile";
+import DataInfo from "./Profile/user.json";
+import Profile from "./Profile/Profile";
+// import Statistical from "./Statistics/statistical-data.json";
+// import StatInfo from "./Statistics/Statistics";
 
 const App = () => (
   <Profile
