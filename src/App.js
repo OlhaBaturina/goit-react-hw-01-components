@@ -2,6 +2,8 @@ import DataInfo from "./Components/Profile/user.json";
 import Profile from "./Components/Profile/Profile";
 import { Statistics } from "./Components/Statistics/Statistics";
 import StatInfo from "./Components/Statistics/statistical-data.json";
+import { FriendList } from "./Components/FriendList/FriendList";
+import friends from "./Components/FriendList/friends.json";
 
 const App = () => (
   <>
@@ -13,6 +15,7 @@ const App = () => (
       stats={DataInfo.stats}
     />
     <Statistics title="Upload Stats" stats={StatInfo} />
+    <FriendList friends={friends} />
   </>
 );
 
