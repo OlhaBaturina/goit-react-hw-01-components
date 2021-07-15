@@ -10,7 +10,7 @@
   background-color: rgba(255, 255, 255, 0.747);
   border: 1px solid rgba(109, 107, 107, 0.562);
   box-shadow: 0 0 10 rgba(100, 184, 135, 0.445);
-  border-radius: 4px;
+  border-radius: 2px;
   margin-bottom: 20px;
   padding: 0 10px;
 }
@@ -27,6 +27,7 @@
 .avatar {
   border-radius: 4px;
   margin-left: 15px;
+  background-color: rgba(235, 182, 68, 0.185);
 }
 
 .name {
