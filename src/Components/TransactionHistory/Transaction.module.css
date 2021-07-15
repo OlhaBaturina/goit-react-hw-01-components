@@ -1,0 +1,37 @@
+.transactionHistory {
+  max-width: 650px;
+  margin: 20px auto;
+  width: 700px;
+  border-collapse: collapse;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.tableName {
+  background-color: rgba(9, 232, 240, 0.774);
+  font-size: 16px;
+  text-align: center;
+}
+
+.type {
+  background-color: rgba(9, 232, 240, 0.11);
+}
+
+.transactionHistory th,
+.transactionHistory td {
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #2a2a2a;
+}
+
+.transactionHistory td:hover,
+.transactionHistory td:focus {
+  font-size: 18px;
+  font-weight: bold;
+  text-shadow: 0 0 10px rgba(201, 9, 240, 0.452);
+}
+
+.transactionHistory tr:hover,
+.transactionHistory tr:focus {
+  background-color: rgba(155, 9, 240, 0.116);
+}

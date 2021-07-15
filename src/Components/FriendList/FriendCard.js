@@ -1,6 +1,5 @@
 import React from "react";
 import PropTypes from "prop-types";
-import friends from "./friends.json";
 import s from "./Friends.module.css";
 
 export const FriendCard = ({ avatar, name, isOnline }) => (
