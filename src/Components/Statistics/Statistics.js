@@ -1,6 +1,5 @@
 import React from "react";
 import PropTypes from "prop-types";
-
 import s from "./Statistcs.module.css";
 import { StatsItem } from "./StatisticItem";
 
