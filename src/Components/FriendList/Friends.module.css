@@ -8,14 +8,37 @@
   width: 350px;
   height: auto;
   background-color: rgba(255, 255, 255, 0.747);
+  border: 1px solid rgba(109, 107, 107, 0.562);
+  box-shadow: 0 0 10 rgba(100, 184, 135, 0.445);
+  border-radius: 4px;
+  margin-bottom: 20px;
+  padding: 0 10px;
 }
+
+.item:hover,
+.item :focus {
+  transition-duration: 500ms;
+  transform: scale(1.1);
+  box-shadow: 0 0 5px rgba(172, 162, 162, 0.623);
+
+  cursor: pointer;
+}
+
 .avatar {
   border-radius: 4px;
+  margin-left: 15px;
 }
 
 .name {
   font-size: 24px;
+  margin-left: 15px;
 }
+
+.item:hover .name,
+.item :focus .name {
+  font-size: 30px;
+}
+
 .isOnline {
   background-color: green;
   width: 15px;
