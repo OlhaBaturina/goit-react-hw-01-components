@@ -1,38 +1,24 @@
+import React from "react";
 import PropTypes from "prop-types";
+import data from "./statistical-data.json";
+import s from "./Statistcs.module.css";
+import { StatsItem } from "./StatisticItem";
 
-const Profile = () => {
-  return (
-    <section className="statistics">
-      <h2 className="title">Upload stats</h2>
+export const Statistics = ({ title, stats }) => (
+  <section className={s.statistics}>
+    {title && <h2 className={s.title}>{title}</h2>}
+    <ul className={s.stat}>
+      {stats.map(({ id, label, percentage }) => (
+        <StatsItem key={id} label={label} percentage={percentage} />
+      ))}
+    </ul>
+  </section>
+);
 
-      <ul className="stat-list">
-        <li className="item">
-          <span className="label">.docx</span>
-          <span className="percentage">4%</span>
-        </li>
-        <li className="item">
-          <span className="label">.mp3</span>
-          <span className="percentage">14%</span>
-        </li>
-        <li className="item">
-          <span className="label">.pdf</span>
-          <span className="percentage">41%</span>
-        </li>
-        <li className="item">
-          <span className="label">.mp4</span>
-          <span className="percentage">12%</span>
-        </li>
-      </ul>
-    </section>
-  );
+Statistics.propTypes = {
+  stats: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+    }).isRequired
+  ),
 };
-
-Profile.propTypes = {
-  avatar: PropTypes.string.isRequired,
-  name: PropTypes.string.isRequired,
-  tag: PropTypes.string.isRequired,
-  location: PropTypes.string.isRequired,
-  stats: PropTypes.number.isRequired,
-};
-
-export default Profile;
