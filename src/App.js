@@ -1,11 +1,11 @@
-import DataInfo from "./Components/Profile/user.json";
+import DataInfo from "./data/user.json";
 import Profile from "./Components/Profile/Profile";
 import { Statistics } from "./Components/Statistics/Statistics";
-import StatInfo from "./Components/Statistics/statistical-data.json";
+import StatInfo from "./data/statistical-data.json";
 import { FriendList } from "./Components/FriendList/FriendList";
-import friends from "./Components/FriendList/friends.json";
+import friends from "./data/friends.json";
 import { TransactionHistory } from "./Components/TransactionHistory/TransactionHistory";
-import transactions from "./Components/TransactionHistory/transactions.json";
+import transactions from "./data/transactions.json";
 
 const App = () => (
   <>
