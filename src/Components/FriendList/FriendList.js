@@ -4,7 +4,7 @@ import friends from "../../data/friends.json";
 import s from "./Friends.module.css";
 import { FriendCard } from "./FriendCard";
 
-export const FriendList = () => (
+export const FriendList = ({ friends }) => (
   <ul className={s.friendList}>
     {friends.map(({ avatar, name, isOnline, id }) => (
       <FriendCard key={id} avatar={avatar} name={name} isOnline={isOnline} />
