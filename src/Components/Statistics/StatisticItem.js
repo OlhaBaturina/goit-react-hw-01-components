@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { renderColor, renderRGBColor } from "./randomColor";
+import { renderColor, renderRGBColor } from "../../helpers/randomColor";
 import s from "./Statistcs.module.css";
 
 export const StatsItem = ({ label, percentage }) => (
